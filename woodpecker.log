@@ -1,0 +1,6 @@
+2022-12-09 18:41:50,425 - QTvcp.QTVCP.WIDGETS.STATUS_LABEL - WARNING - lbl_runtime : no option recognised
+2022-12-09 18:41:50,855 - QTvcp.QTVCP.WIDGETS.STATUS_LABEL - WARNING - lbl_maxv_percent : no option recognised
+2022-12-09 18:41:50,857 - QTvcp.QTVCP.WIDGETS.STATUS_LABEL - WARNING - lbl_max_rapid : no option recognised
+2022-12-09 18:41:51,050 - QTvcp.QTVCP.LIB.QT_NGCGUI.NGCGUI - DEBUG - UI Filename: /usr/lib/python3/dist-packages/qtvcp/lib/qt_ngcgui/ngcgui.ui
+2022-12-09 18:41:51,072 - QTvcp.QTVCP.LIB.QT_NGCGUI.NGCGUI - DEBUG - UI Filename: /usr/lib/python3/dist-packages/qtvcp/lib/qt_ngcgui/ngcgui.ui Didn't find a path NGCGUI files
+2022-12-09 18:43:10,072 - QTvcp.QTVCP.WIDGETS.VERSA_PROBE - DEBUG - Saving Versa probe data to preference file.
