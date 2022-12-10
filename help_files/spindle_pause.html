@@ -8,7 +8,7 @@
 </head>
 <body>
 <div class="sidenav">
-    <img src="images/silver_dragon.png" alt="Qt_Dragon">
+    <img src="images/WoodPecker.png" alt="Qt_WoodPecker">
     <ul style="list-style-type:none">
     <li><a href="hole_circle_utility.html">HOLE CIRCLE UTILITY</a></li>
     <li><a href="facing_utility.html">FACING UTILITY</a></li>
@@ -38,9 +38,9 @@ However, it will still return to the proper Z level when the program is resumed.
 <p>The spindle pause function requires the following HAL connections:</p>
 
 <div class="code-block">
-    <pre class="hal">net spindle-pause    qtdragon.spindle_inhibit => spindle.0.inhibit</pre>
-    <pre class="hal">net eoffset-clr1     qtdragon.eoffset-clear => or2_1.in0</pre>
-    <pre class="hal">net eoffset          qtdragon.eoffset-value <= axis.z.eoffset</pre>
+    <pre class="hal">net spindle-pause    woodpecker.spindle_inhibit => spindle.0.inhibit</pre>
+    <pre class="hal">net eoffset-clr1     woodpecker.eoffset-clear => or2_1.in0</pre>
+    <pre class="hal">net eoffset          woodpecker.eoffset-value <= axis.z.eoffset</pre>
 </div>
 
 </body>
