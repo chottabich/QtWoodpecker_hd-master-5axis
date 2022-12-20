@@ -200,8 +200,8 @@ class HandlerClass:
             for i in self.axis_b_list:
                 self.w[i].hide()
     # set validators for lineEdit widgets
-        for val in self.lineedit_list:
-            self.w['lineEdit_' + val].setValidator(self.valid)
+            for val in self.lineedit_list:
+                self.w['lineEdit_' + val].setValidator(self.valid)
     # check for default setup html file
         try:
             # web view widget for SETUP page
