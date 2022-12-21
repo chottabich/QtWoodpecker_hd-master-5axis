@@ -71,7 +71,7 @@ class HandlerClass:
         self.PATHS = paths
         self.gcodes = GCodes(widgets)
         self._last_count = 0       
-        self.valid = QtGui.QDoubleValidator(-999.999, 999.999, 3)
+        self.valid = QtGui.QDoubleValidator(-999.999, 999.999, 3).setLocale(QtCore.QLocale("en_US"))
         self.styleeditor = SSE(widgets, paths)
         KEYBIND.add_call('Key_F10','on_keycall_F10')
         KEYBIND.add_call('Key_F11','on_keycall_F11')
@@ -200,8 +200,8 @@ class HandlerClass:
             for i in self.axis_b_list:
                 self.w[i].hide()
     # set validators for lineEdit widgets
-            for val in self.lineedit_list:
-                self.w['lineEdit_' + val].setValidator(self.valid)
+        for val in self.lineedit_list:
+            self.w['lineEdit_' + val].setValidator(self.valid)
     # check for default setup html file
         try:
             # web view widget for SETUP page
