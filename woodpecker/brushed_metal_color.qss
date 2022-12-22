@@ -201,6 +201,14 @@ QCheckBox::indicator {
     height: 12px;
 }
 
+QCheckBox::indicator:unchecked {
+    image: url(woodpecker/images/unchecked.png);
+}
+
+QCheckBox::indicator:checked {
+    image: url(woodpecker/images/checked.png);
+}
+
 QComboBox {
     border: 1px solid black;
     min-width: 120px;
@@ -256,9 +264,6 @@ QProgressBar {
 QProgressBar::chunk {
     background: qlineargradient(x1: 0, y1: 0.2, x2: 1, y2: 1,
     stop: 0 #bbf, stop: 1 #55f);
-}
-
-.QFrame {
 }
 
 QFrame#frame_cycle_start,
@@ -348,9 +353,11 @@ QSlider::handle:vertical {
     margin-right: -4px;
     border-radius: 2px;
 }
+
 QDialog{
 background-image: url(:/images/images/brushed_metal.png);
 }
+
 ToolDialog QPushButton{
     width: 100px;
     height: 40px;
