@@ -78,7 +78,7 @@
         </property>
         <property name="close_overlay_color" stdset="0">
          <color alpha="150">
-          <red>0</red>
+          <red>100</red>
           <green>0</green>
           <blue>0</blue>
          </color>
@@ -88,6 +88,9 @@
         </property>
         <property name="pref_filename_string" stdset="0">
          <string>~/linuxcnc/configs/woodpecker/woodpecker.pref</string>
+        </property>
+        <property name="focusOverlay_option" stdset="0">
+         <bool>true</bool>
         </property>
         <property name="focusEffect_option" stdset="0">
          <bool>false</bool>
@@ -4510,44 +4513,44 @@ PLATE</string>
                                 </property>
                                 <property name="minimumSize">
                                  <size>
-                                  <width>54</width>
+                                  <width>60</width>
                                   <height>0</height>
                                  </size>
                                 </property>
                                 <property name="maximumSize">
                                  <size>
-                                  <width>54</width>
+                                  <width>60</width>
                                   <height>16777215</height>
                                  </size>
                                 </property>
-                                <layout class="QVBoxLayout" name="verticalLayout_3">
+                                <layout class="QVBoxLayout" name="verticalLayout">
                                  <property name="spacing">
                                   <number>4</number>
                                  </property>
                                  <property name="leftMargin">
-                                  <number>0</number>
-                                 </property>
-                                 <property name="topMargin">
                                   <number>2</number>
                                  </property>
+                                 <property name="topMargin">
+                                  <number>6</number>
+                                 </property>
                                  <property name="rightMargin">
-                                  <number>0</number>
+                                  <number>2</number>
                                  </property>
                                  <property name="bottomMargin">
-                                  <number>4</number>
+                                  <number>2</number>
                                  </property>
                                  <item>
                                   <widget class="ActionToolButton" name="actiontoolbutton">
                                    <property name="minimumSize">
                                     <size>
-                                     <width>50</width>
-                                     <height>40</height>
+                                     <width>56</width>
+                                     <height>45</height>
                                     </size>
                                    </property>
                                    <property name="maximumSize">
                                     <size>
-                                     <width>50</width>
-                                     <height>40</height>
+                                     <width>56</width>
+                                     <height>45</height>
                                     </size>
                                    </property>
                                    <property name="toolTip">
@@ -4581,14 +4584,14 @@ View</string>
                                    </property>
                                    <property name="minimumSize">
                                     <size>
-                                     <width>50</width>
-                                     <height>40</height>
+                                     <width>56</width>
+                                     <height>45</height>
                                     </size>
                                    </property>
                                    <property name="maximumSize">
                                     <size>
-                                     <width>50</width>
-                                     <height>40</height>
+                                     <width>56</width>
+                                     <height>45</height>
                                     </size>
                                    </property>
                                    <property name="baseSize">
@@ -4666,14 +4669,14 @@ View</string>
                                    </property>
                                    <property name="minimumSize">
                                     <size>
-                                     <width>50</width>
-                                     <height>40</height>
+                                     <width>56</width>
+                                     <height>45</height>
                                     </size>
                                    </property>
                                    <property name="maximumSize">
                                     <size>
-                                     <width>50</width>
-                                     <height>40</height>
+                                     <width>56</width>
+                                     <height>45</height>
                                     </size>
                                    </property>
                                    <property name="baseSize">
@@ -4748,14 +4751,14 @@ View</string>
                                    </property>
                                    <property name="minimumSize">
                                     <size>
-                                     <width>50</width>
-                                     <height>40</height>
+                                     <width>56</width>
+                                     <height>45</height>
                                     </size>
                                    </property>
                                    <property name="maximumSize">
                                     <size>
-                                     <width>50</width>
-                                     <height>40</height>
+                                     <width>56</width>
+                                     <height>45</height>
                                     </size>
                                    </property>
                                    <property name="baseSize">
@@ -4830,14 +4833,14 @@ View</string>
                                    </property>
                                    <property name="minimumSize">
                                     <size>
-                                     <width>50</width>
-                                     <height>40</height>
+                                     <width>56</width>
+                                     <height>45</height>
                                     </size>
                                    </property>
                                    <property name="maximumSize">
                                     <size>
-                                     <width>50</width>
-                                     <height>40</height>
+                                     <width>56</width>
+                                     <height>45</height>
                                     </size>
                                    </property>
                                    <property name="baseSize">
@@ -4906,14 +4909,14 @@ View</string>
                                   <widget class="PushButton" name="btn_setdro">
                                    <property name="minimumSize">
                                     <size>
-                                     <width>50</width>
-                                     <height>40</height>
+                                     <width>56</width>
+                                     <height>45</height>
                                     </size>
                                    </property>
                                    <property name="maximumSize">
                                     <size>
-                                     <width>50</width>
-                                     <height>40</height>
+                                     <width>56</width>
+                                     <height>45</height>
                                     </size>
                                    </property>
                                    <property name="toolTip">
@@ -4921,6 +4924,37 @@ View</string>
                                    </property>
                                    <property name="text">
                                     <string>DRO</string>
+                                   </property>
+                                   <property name="checkable">
+                                    <bool>true</bool>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item>
+                                  <widget class="PushButton" name="btn_show_offsets">
+                                   <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                     <horstretch>0</horstretch>
+                                     <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                   </property>
+                                   <property name="minimumSize">
+                                    <size>
+                                     <width>56</width>
+                                     <height>45</height>
+                                    </size>
+                                   </property>
+                                   <property name="maximumSize">
+                                    <size>
+                                     <width>56</width>
+                                     <height>45</height>
+                                    </size>
+                                   </property>
+                                   <property name="toolTip">
+                                    <string>Toggle display setShowOffset</string>
+                                   </property>
+                                   <property name="text">
+                                    <string>Offsets</string>
                                    </property>
                                    <property name="checkable">
                                     <bool>true</bool>
@@ -4937,14 +4971,14 @@ View</string>
                                    </property>
                                    <property name="minimumSize">
                                     <size>
-                                     <width>50</width>
-                                     <height>40</height>
+                                     <width>56</width>
+                                     <height>45</height>
                                     </size>
                                    </property>
                                    <property name="maximumSize">
                                     <size>
-                                     <width>50</width>
-                                     <height>40</height>
+                                     <width>56</width>
+                                     <height>45</height>
                                     </size>
                                    </property>
                                    <property name="toolTip">
@@ -4978,14 +5012,14 @@ View</string>
                                    </property>
                                    <property name="minimumSize">
                                     <size>
-                                     <width>50</width>
-                                     <height>40</height>
+                                     <width>56</width>
+                                     <height>45</height>
                                     </size>
                                    </property>
                                    <property name="maximumSize">
                                     <size>
-                                     <width>50</width>
-                                     <height>40</height>
+                                     <width>56</width>
+                                     <height>45</height>
                                     </size>
                                    </property>
                                    <property name="baseSize">
@@ -5060,14 +5094,14 @@ View</string>
                                    </property>
                                    <property name="minimumSize">
                                     <size>
-                                     <width>50</width>
-                                     <height>40</height>
+                                     <width>56</width>
+                                     <height>45</height>
                                     </size>
                                    </property>
                                    <property name="maximumSize">
                                     <size>
-                                     <width>50</width>
-                                     <height>40</height>
+                                     <width>56</width>
+                                     <height>45</height>
                                     </size>
                                    </property>
                                    <property name="baseSize">
@@ -5142,14 +5176,14 @@ View</string>
                                    </property>
                                    <property name="minimumSize">
                                     <size>
-                                     <width>50</width>
-                                     <height>40</height>
+                                     <width>56</width>
+                                     <height>45</height>
                                     </size>
                                    </property>
                                    <property name="maximumSize">
                                     <size>
-                                     <width>50</width>
-                                     <height>40</height>
+                                     <width>56</width>
+                                     <height>45</height>
                                     </size>
                                    </property>
                                    <property name="baseSize">
@@ -5232,6 +5266,9 @@ View</string>
                               </item>
                               <item>
                                <widget class="GCodeGraphics" name="gcodegraphics">
+                                <property name="_dro" stdset="0">
+                                 <bool>false</bool>
+                                </property>
                                 <property name="background_color" stdset="0">
                                  <color alpha="250">
                                   <red>100</red>
@@ -14793,6 +14830,15 @@ ZERO A</string>
                                  <property name="text">
                                   <string>ZERO</string>
                                  </property>
+                                 <property name="zero_axis_action" stdset="0">
+                                  <bool>true</bool>
+                                 </property>
+                                 <property name="joint_number" stdset="0">
+                                  <number>4</number>
+                                 </property>
+                                 <property name="axis_letter" stdset="0">
+                                  <string>B</string>
+                                 </property>
                                 </widget>
                                </item>
                                <item row="5" column="5">
@@ -18823,7 +18869,7 @@ color: rgb(51, 255, 0);</string>
    <slot>updateJogState()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1636</x>
+     <x>1640</x>
      <y>48</y>
     </hint>
     <hint type="destinationlabel">
@@ -18839,7 +18885,7 @@ color: rgb(51, 255, 0);</string>
    <slot>updateJogState()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1636</x>
+     <x>1640</x>
      <y>48</y>
     </hint>
     <hint type="destinationlabel">
@@ -18855,7 +18901,7 @@ color: rgb(51, 255, 0);</string>
    <slot>updateJogState()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1636</x>
+     <x>1640</x>
      <y>48</y>
     </hint>
     <hint type="destinationlabel">
@@ -18871,7 +18917,7 @@ color: rgb(51, 255, 0);</string>
    <slot>updateJogState()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1636</x>
+     <x>1640</x>
      <y>48</y>
     </hint>
     <hint type="destinationlabel">
@@ -19272,7 +19318,7 @@ color: rgb(51, 255, 0);</string>
    <hints>
     <hint type="sourcelabel">
      <x>712</x>
-     <y>40</y>
+     <y>37</y>
     </hint>
     <hint type="destinationlabel">
      <x>564</x>
@@ -19288,7 +19334,7 @@ color: rgb(51, 255, 0);</string>
    <hints>
     <hint type="sourcelabel">
      <x>712</x>
-     <y>40</y>
+     <y>35</y>
     </hint>
     <hint type="destinationlabel">
      <x>538</x>
@@ -19447,7 +19493,7 @@ color: rgb(51, 255, 0);</string>
    <slot>updateJogState()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1636</x>
+     <x>1640</x>
      <y>48</y>
     </hint>
     <hint type="destinationlabel">
@@ -19463,7 +19509,7 @@ color: rgb(51, 255, 0);</string>
    <slot>updateJogState()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1636</x>
+     <x>1640</x>
      <y>48</y>
     </hint>
     <hint type="destinationlabel">
@@ -19479,7 +19525,7 @@ color: rgb(51, 255, 0);</string>
    <slot>updateJogState()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1636</x>
+     <x>1640</x>
      <y>48</y>
     </hint>
     <hint type="destinationlabel">
@@ -19495,7 +19541,7 @@ color: rgb(51, 255, 0);</string>
    <slot>updateJogState()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1636</x>
+     <x>1640</x>
      <y>48</y>
     </hint>
     <hint type="destinationlabel">
@@ -19623,8 +19669,8 @@ color: rgb(51, 255, 0);</string>
    <slot>btn_setdro_clicked()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>664</x>
-     <y>346</y>
+     <x>672</x>
+     <y>320</y>
     </hint>
     <hint type="destinationlabel">
      <x>549</x>
@@ -19768,7 +19814,7 @@ color: rgb(51, 255, 0);</string>
    <hints>
     <hint type="sourcelabel">
      <x>712</x>
-     <y>40</y>
+     <y>38</y>
     </hint>
     <hint type="destinationlabel">
      <x>959</x>
@@ -19840,6 +19886,38 @@ color: rgb(51, 255, 0);</string>
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>gcodegraphics</sender>
+   <signal>percentLoaded(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>percent_loaded_changed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1411</x>
+     <y>93</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1419</x>
+     <y>-12</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_show_offsets</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>btn_show_offsets_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>643</x>
+     <y>349</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>676</x>
+     <y>-17</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>disable_pause_spindle()</slot>
@@ -19897,10 +19975,12 @@ color: rgb(51, 255, 0);</string>
   <slot>btn_stop_clicked()</slot>
   <slot>pause_spindle()</slot>
   <slot>percent_done_changed()</slot>
+  <slot>percent_loaded_changed()</slot>
+  <slot>btn_show_offsets_clicked()</slot>
  </slots>
  <buttongroups>
-  <buttongroup name="mode_buttonGroup"/>
   <buttongroup name="axis_buttonGroup"/>
+  <buttongroup name="mode_buttonGroup"/>
   <buttongroup name="page_buttonGroup"/>
  </buttongroups>
 </ui>
