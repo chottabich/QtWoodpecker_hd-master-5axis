@@ -12334,7 +12334,7 @@ STOP</string>
                        </property>
                        <property name="maximumSize">
                         <size>
-                         <width>150</width>
+                         <width>168</width>
                          <height>16777215</height>
                         </size>
                        </property>
@@ -12494,6 +12494,12 @@ STOP</string>
                      </item>
                      <item>
                       <widget class="QFrame" name="frame_2">
+                       <property name="maximumSize">
+                        <size>
+                         <width>220</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
                        <property name="frameShape">
                         <enum>QFrame::StyledPanel</enum>
                        </property>
@@ -16080,13 +16086,13 @@ ZERO</string>
                                       </property>
                                       <property name="minimumSize">
                                        <size>
-                                        <width>50</width>
+                                        <width>40</width>
                                         <height>45</height>
                                        </size>
                                       </property>
                                       <property name="maximumSize">
                                        <size>
-                                        <width>50</width>
+                                        <width>40</width>
                                         <height>45</height>
                                        </size>
                                       </property>
@@ -16209,13 +16215,13 @@ border-radius: 4px;
                                       </property>
                                       <property name="minimumSize">
                                        <size>
-                                        <width>50</width>
+                                        <width>40</width>
                                         <height>45</height>
                                        </size>
                                       </property>
                                       <property name="maximumSize">
                                        <size>
-                                        <width>50</width>
+                                        <width>40</width>
                                         <height>45</height>
                                        </size>
                                       </property>
@@ -16461,13 +16467,13 @@ border-radius: 4px;
                                       </property>
                                       <property name="minimumSize">
                                        <size>
-                                        <width>50</width>
+                                        <width>40</width>
                                         <height>45</height>
                                        </size>
                                       </property>
                                       <property name="maximumSize">
                                        <size>
-                                        <width>50</width>
+                                        <width>40</width>
                                         <height>45</height>
                                        </size>
                                       </property>
@@ -16596,13 +16602,13 @@ border-radius: 4px;
                                       </property>
                                       <property name="minimumSize">
                                        <size>
-                                        <width>50</width>
+                                        <width>40</width>
                                         <height>45</height>
                                        </size>
                                       </property>
                                       <property name="maximumSize">
                                        <size>
-                                        <width>50</width>
+                                        <width>40</width>
                                         <height>45</height>
                                        </size>
                                       </property>
@@ -16854,13 +16860,13 @@ border-radius: 4px;
                                       </property>
                                       <property name="minimumSize">
                                        <size>
-                                        <width>50</width>
+                                        <width>40</width>
                                         <height>45</height>
                                        </size>
                                       </property>
                                       <property name="maximumSize">
                                        <size>
-                                        <width>50</width>
+                                        <width>40</width>
                                         <height>45</height>
                                        </size>
                                       </property>
@@ -16986,13 +16992,13 @@ border-radius: 4px;
                                       </property>
                                       <property name="minimumSize">
                                        <size>
-                                        <width>50</width>
+                                        <width>40</width>
                                         <height>45</height>
                                        </size>
                                       </property>
                                       <property name="maximumSize">
                                        <size>
-                                        <width>50</width>
+                                        <width>40</width>
                                         <height>45</height>
                                        </size>
                                       </property>
@@ -17250,13 +17256,13 @@ border-radius: 4px;
                                       </property>
                                       <property name="minimumSize">
                                        <size>
-                                        <width>50</width>
+                                        <width>40</width>
                                         <height>45</height>
                                        </size>
                                       </property>
                                       <property name="maximumSize">
                                        <size>
-                                        <width>50</width>
+                                        <width>40</width>
                                         <height>45</height>
                                        </size>
                                       </property>
@@ -17391,13 +17397,13 @@ border-radius: 4px;
                                       </property>
                                       <property name="minimumSize">
                                        <size>
-                                        <width>50</width>
+                                        <width>40</width>
                                         <height>45</height>
                                        </size>
                                       </property>
                                       <property name="maximumSize">
                                        <size>
-                                        <width>50</width>
+                                        <width>40</width>
                                         <height>45</height>
                                        </size>
                                       </property>
@@ -17630,13 +17636,13 @@ border-radius: 4px;
                     </property>
                     <property name="minimumSize">
                      <size>
-                      <width>240</width>
+                      <width>310</width>
                       <height>320</height>
                      </size>
                     </property>
                     <property name="maximumSize">
                      <size>
-                      <width>280</width>
+                      <width>310</width>
                       <height>320</height>
                      </size>
                     </property>
@@ -20289,8 +20295,8 @@ color: rgb(51, 255, 0);</string>
   <slot>chk_eoffsets_checked()</slot>
  </slots>
  <buttongroups>
-  <buttongroup name="mode_buttonGroup"/>
-  <buttongroup name="page_buttonGroup"/>
   <buttongroup name="axis_buttonGroup"/>
+  <buttongroup name="page_buttonGroup"/>
+  <buttongroup name="mode_buttonGroup"/>
  </buttongroups>
 </ui>

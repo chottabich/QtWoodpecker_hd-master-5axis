@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1920</width>
-    <height>1080</height>
+    <height>1056</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -19,7 +19,7 @@
   <property name="minimumSize">
    <size>
     <width>1920</width>
-    <height>1080</height>
+    <height>1056</height>
    </size>
   </property>
   <property name="maximumSize">
@@ -41,7 +41,7 @@
    <property name="minimumSize">
     <size>
      <width>1920</width>
-     <height>1080</height>
+     <height>1056</height>
     </size>
    </property>
    <property name="maximumSize">
@@ -12437,7 +12437,7 @@ STOP</string>
                        </property>
                        <property name="maximumSize">
                         <size>
-                         <width>150</width>
+                         <width>168</width>
                          <height>16777215</height>
                         </size>
                        </property>
@@ -12597,6 +12597,12 @@ STOP</string>
                      </item>
                      <item>
                       <widget class="QFrame" name="frame_2">
+                       <property name="maximumSize">
+                        <size>
+                         <width>220</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
                        <property name="frameShape">
                         <enum>QFrame::StyledPanel</enum>
                        </property>
@@ -18067,13 +18073,13 @@ border-radius: 4px;
                     </property>
                     <property name="minimumSize">
                      <size>
-                      <width>240</width>
+                      <width>312</width>
                       <height>300</height>
                      </size>
                     </property>
                     <property name="maximumSize">
                      <size>
-                      <width>280</width>
+                      <width>312</width>
                       <height>16777215</height>
                      </size>
                     </property>
@@ -18171,13 +18177,13 @@ border-radius: 4px;
                           </property>
                           <property name="minimumSize">
                            <size>
-                            <width>55</width>
+                            <width>60</width>
                             <height>50</height>
                            </size>
                           </property>
                           <property name="maximumSize">
                            <size>
-                            <width>55</width>
+                            <width>60</width>
                             <height>50</height>
                            </size>
                           </property>
@@ -18203,13 +18209,13 @@ Faster</string>
                           </property>
                           <property name="minimumSize">
                            <size>
-                            <width>55</width>
+                            <width>60</width>
                             <height>50</height>
                            </size>
                           </property>
                           <property name="maximumSize">
                            <size>
-                            <width>55</width>
+                            <width>60</width>
                             <height>50</height>
                            </size>
                           </property>
@@ -18265,13 +18271,13 @@ Slover</string>
                              </property>
                              <property name="minimumSize">
                               <size>
-                               <width>55</width>
+                               <width>60</width>
                                <height>50</height>
                               </size>
                              </property>
                              <property name="maximumSize">
                               <size>
-                               <width>55</width>
+                               <width>60</width>
                                <height>50</height>
                               </size>
                              </property>
@@ -18460,13 +18466,13 @@ Slover</string>
                              </property>
                              <property name="minimumSize">
                               <size>
-                               <width>55</width>
+                               <width>60</width>
                                <height>50</height>
                               </size>
                              </property>
                              <property name="maximumSize">
                               <size>
-                               <width>55</width>
+                               <width>60</width>
                                <height>50</height>
                               </size>
                              </property>
@@ -18655,13 +18661,13 @@ Slover</string>
                              </property>
                              <property name="minimumSize">
                               <size>
-                               <width>55</width>
+                               <width>60</width>
                                <height>50</height>
                               </size>
                              </property>
                              <property name="maximumSize">
                               <size>
-                               <width>55</width>
+                               <width>60</width>
                                <height>50</height>
                               </size>
                              </property>
@@ -19007,7 +19013,7 @@ color: rgb(51, 255, 0);</string>
                            </size>
                           </property>
                           <property name="text">
-                           <string>MB ER.</string>
+                           <string>MB ERRORS</string>
                           </property>
                           <property name="alignment">
                            <set>Qt::AlignCenter</set>
@@ -19109,7 +19115,7 @@ color: rgb(51, 255, 0);</string>
                            <string>Motion limited due to external offsets</string>
                           </property>
                           <property name="text">
-                           <string>FAULT </string>
+                           <string>FAULT CODE</string>
                           </property>
                           <property name="alignment">
                            <set>Qt::AlignCenter</set>
@@ -20710,8 +20716,8 @@ color: rgb(51, 255, 0);</string>
   <slot>chk_eoffsets_checked()</slot>
  </slots>
  <buttongroups>
-  <buttongroup name="mode_buttonGroup"/>
-  <buttongroup name="page_buttonGroup"/>
   <buttongroup name="axis_buttonGroup"/>
+  <buttongroup name="page_buttonGroup"/>
+  <buttongroup name="mode_buttonGroup"/>
  </buttongroups>
 </ui>
