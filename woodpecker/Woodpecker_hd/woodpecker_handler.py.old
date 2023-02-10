@@ -109,7 +109,7 @@ class HandlerClass:
                               "search_vel", "probe_vel", "max_probe", "eoffset_count"]
         self.onoff_list = ["frame_tool", "frame_dro", "frame_override", "frame_status"]
         self.auto_list = ["chk_eoffsets", "cmb_gcode_history", "btn_pause_spindle", "btn_file", "btn_offsets", "btn_tool", "btn_status", "btn_probe", "btn_camera", "btn_utils", "btn_touchy"]
-        self.axis_a_list = ["label_axis_a", "dro_axis_a", "action_zero_a", "axistoolbutton_a", "dro_button_stack_a", "widget_jog_angular", "widget_increments_angular", "a_plus_jogbutton", "a_minus_jogbutton", "dro_label_a", "dro_label_a_2", "dro_label_a_3", "label_axis_a_2"]        
+        self.axis_a_list = ["label_axis_a", "dro_axis_a", "action_zero_a", "axistoolbutton_a", "dro_button_stack_a", "widget_jog_angular", "widget_increments_angular", "a_plus_jogbutton", "a_minus_jogbutton"]        
         self.button_response_list = ["btn_start", "btn_home_all", "dro_button_stack_x", "dro_button_stack_y",
                             "dro_button_stack_z", "dro_button_stack_a", "btn_reload_file"]
 
@@ -1137,7 +1137,7 @@ class HandlerClass:
         self.w.gcodegraphics.setoverlay(state)
     def getShowOffsets(self):
         return self.show_offsets
-    
+        
     # camview tab
     def cam_zoom_changed(self, value):
         self.w.camview.scale = float(value) / 10
@@ -1297,7 +1297,7 @@ class HandlerClass:
                 self.w.web_view.load(QtCore.QUrl.fromLocalFile(fname))
                 self.add_status("Loaded HTML file : {}".format(fname))
                 self.w.main_tab_widget.setCurrentIndex(TAB_SETUP)
-                self.w.stackedWidget.setCurrentIndex(1)
+                self.w.stackedWidget.setCurrentIndex(0)
                 self.w.btn_setup.setChecked(True)
                 self.w.tabWidget_setup.setCurrentIndex(0)                
             except Exception as e:
@@ -1396,14 +1396,12 @@ class HandlerClass:
         if state is True:
             if self.w.main_tab_widget.currentIndex() != TAB_SETUP:                
                 self.w.stackedWidget_2.show()
-                self.w.stackedWidget_3.setCurrentIndex(0)
         else:
             if self.w.main_tab_widget.currentIndex() != TAB_PROBE:
                 self.w.stackedWidget_2.hide()
                 self.w.btn_main.setChecked(True)
                 self.w.main_tab_widget.setCurrentIndex(TAB_MAIN)
                 self.w.stackedWidget.setCurrentIndex(0)
-                self.w.stackedWidget_3.setCurrentIndex(1)
                 self.w.stackedWidget_dro.setCurrentIndex(0)
 
     def enable_onoff(self, state):
